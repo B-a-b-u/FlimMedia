@@ -7,6 +7,8 @@
     <em>{{post.user.email}}</em>
     <p>{{post.blog}}</p>
     <a href="{% url 'home' %}" class="btn btn-secondary" >Back</a>
+    <a href="{% url 'update_post' post.id %}" class="btn btn-warning" >Update</a>
+
     {% endblock %}
 
 </div>
