@@ -1,0 +1,13 @@
+{% extends 'film_media_app/base.html' %}
+<div class="container">
+    {% block content %}
+    <p>individual_post</p>
+    <h1>{{post.title}}</h1>
+    <em>{{post.user.username}}</em>
+    <em>{{post.user.email}}</em>
+    <p>{{post.blog}}</p>
+    <a href="{% url 'home' %}" class="btn btn-secondary" >Back</a>
+    {% endblock %}
+
+</div>
+

@@ -1,0 +1,11 @@
+{% extends 'film_media_app/base.html' %}
+<div class="container">
+    {% block content %}
+    <br>
+    <br>
+    {% for p in  posts %}
+    <li><a href="{% url 'individual_post' p.id %}">{{p.title}}</a></li>
+    {% endfor %}
+    {% endblock %}
+
+</div>
