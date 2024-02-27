@@ -9,6 +9,7 @@ class Home(ListView):
     model = Post
     template_name = "film_media_app/home.html"
     context_object_name = "posts"
+    ordering = ["-created_at"]
 
 # View for individual posts
 class Individual_post(DetailView):
